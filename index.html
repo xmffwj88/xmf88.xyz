@@ -1,1 +1,429 @@
-Hello world, I come!
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>河南省浩大建设工程有限公司</title>
+	<!-- 移动设备优先 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引入CSS文件 -->
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<!-- 引入JS文件  在引入JS之前，必须先引入jQuery文件-->
+	<script src="./bootstrap/js/jQuery.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		#carousel-example-generic{
+			width: 1325px;
+			height: 451px;
+			margin: 50px auto;
+			margin-bottom: 18px;
+		}
+		#h5{color: #0088FF}
+		.p{color: #7575D2;}
+		.navbar-brand{margin-right: 50px;}
+
+	</style>
+</head>
+<body style="height: 1200px;">
+<!-- 导航条开始 -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="height:50px; margin:0 auto; padding: 0; text-align: center;">
+  <!-- <div class="container-fluid"> 铺满整个屏幕 -->  
+  <div class="container"><!-- 固定宽度 -->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="padding:0 0 0 15px;" href="http://www.haodajs.com"><img alt="Brand" style="max-width:130px;" src="./images/logo.jpg"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs">
+      <ul class="nav navbar-nav"><!-- 添加列表项目 -->
+        <li class="active"><a href="./index.html">首页</a></li>
+        <li><a href="./qyjj.html">企业简介</a></li>
+        <li><a href="./qywh.html">企业文化</a></li>
+        <li><a href="./zyyj.html">主要业绩</a></li>
+        <li><a href="./rczp.html">人才招聘</a></li>
+        <li><a href="./gywm.html">关于我们</a></li>
+        
+      </ul><!-- 添加列表项目结束 -->
+      <ul class="nav navbar-nav navbar-right"> <!-- 添加注册和登录标签 -->
+        <li><a href="#">注册</a></li>
+        <li><a href="#">登录</a></li>
+       
+      </ul><!-- 添加注册和登录标签结束 -->
+      <form class="navbar-form navbar-right"><!-- 添加搜索表单 -->
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="内容">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form><!-- 添加搜索表单结束 -->
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- 导航条结束 -->
+
+<!-- 轮播图开始 -->
+<div class="container-fluid">
+	
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="./images/lb-1.png" alt="...">
+	      <!-- <div class="carousel-caption">
+	        <h3 id="h3">海马公园五期8号楼</h3>
+	      </div> -->
+	    </div>
+	    <div class="item">
+	      <img src="./images/lb-2.png" alt="...">         
+	   		<!-- div class="carousel-caption">
+	   			        <h3 id="h3">海马公园五期8号楼</h3>
+	   			        </div> -->
+	  </div>
+		<div class="item">
+	      <img src="./images/lb-3.png" alt="...">
+	      	<!-- <div class="carousel-caption">
+	      		        <h3 id="h3">海马公园五期8号楼</h3>
+	      		      </div> -->
+	    </div>
+	    <div class="item">
+	      <img src="./images/lb-4.png" alt="...">
+	      	<!-- <div class="carousel-caption">
+	      		        <h3 id="h3">海马公园五期8号楼</h3>
+	      		      </div> -->
+	    </div>
+	    <div class="item">
+	      <img src="./images/lb-5.png" alt="...">
+	      	<!-- <div class="carousel-caption">
+	      		        <h3 id="h3">海马公园五期8号楼</h3>
+	      		      </div> -->
+	    </div>
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	  <script type="text/javascript">
+	  	$('.carousel').carousel({
+	  interval: 5000
+	})
+	  </script>
+	</div>
+</div>	
+<!-- 轮播图结束 -->
+
+<!-- 缩略图开始 -->
+<div class="container">
+		<div class="row">
+			<div class="col-sm-12 main-title">
+                <h2 class="h1" style="color: #00f; text-align: center;">我们的业绩</h2>
+                <p class="line line-big"></p>
+                <h2 style="text-align: center;">
+                    <small >点击图片查看工程进度情况</small>
+                </h2>
+            </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+				<img src="./images/1.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：荥阳清华大溪地10号院</h5>
+		        <p class="p">工程地址：荥阳市中原路商隐路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：已完</p>                
+		        
+		      </div>
+		    </div>
+		  </div>
+
+			<div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/2.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：海马公园5期</h5>
+		        <p class="p">工程地址：郑州市商都路普惠路路东<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：保温完成、涂料施工中</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/6.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：郑州万科福晟·万科誉</h5>
+		        <p class="p">工程地址：郑州市商都路普惠路路东<br>施工内容：外墙外保温及外墙炫彩漆<br>工程状态：已完</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/7.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：开封西湖印象（南院）</h5>
+		        <p class="p">工程地址：开封第一大街金耀璐南<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：已完</p>
+		      </div>
+		    </div>
+		  </div>
+			<div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/10.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：荥阳海龙钰苑</h5>
+		        <p class="p">工程地址：荥阳市索河路商隐路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：多层已完、高层施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/11.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：万科美景·魅力四期</h5>
+		        <p class="p">工程地址：郑州市相州路通航路<br>施工内容：外墙炫彩漆<br>工程状态：施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/12.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">工程名称：漯河畅园国际</h5>
+		        <p class="p">工程地址：漯河市长江路太白山路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/4.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">项目名称：康桥盛世家园</h5>
+		        <p class="p">工程地址：中牟县解放路陇海路南<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：主体施工中</p>
+		      </div>
+		    </div>
+		  </div>
+
+			<div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/13.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">项目名称：康桥康城一号院</h5>
+		        <p class="p">工程地址：郑州大学南路鼎盛大道<br>施工内容：外墙外保温<br>工程状态：施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/8.jpeg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">项目名称：荥阳瀚宇天悦湾</h5>
+		        <p class="p">工程地址：荥阳市成皋路滨河东路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：已完</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/3.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">项目名称：周口市扶沟县碧桂园</h5>
+		        <p class="p">工程地址：扶沟力神大道花园南路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="./images/5.jpg" alt="...">
+		      <div class="caption">
+		        <h5 id="h5">项目名称：新店具茨山社区二期</h5>
+		        <p class="p">工程地址：新郑市姬水路嫘祖路<br>施工内容：外墙外保温及外墙真石漆<br>工程状态：施工中</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>			
+	</div>	
+<!-- 缩略图结束 -->
+
+<!-- 我们的客户 -->
+
+<div class="index-row our-client">
+<div class="container">
+	<div class="row" >	 
+			<div class="col-sm-12 main-title">
+                <h2 class="h1" style="color: #00f; text-align: center;">我们的客户</h2>
+
+                <p class="line line-big"></p>
+
+                <h2 style="text-align: center;">
+                    <small >他们与浩大已经或正在建立合作关系</small>
+                </h2>
+            </div>            
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-1.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-2.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-3.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-4.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-5.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-6.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-7.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-8.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-9.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div><div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-10.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-11.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-12.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-13.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-14.png" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-15.jpg" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div><div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-16.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-17.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-2">
+	    <div class="thumbnail">
+	      <img src="./images/hz-18.gif" alt="...">
+	      <div class="caption">		      
+	      </div>
+	    </div>
+	  </div>
+
+	</div>			
+</div>
+</div>
+<!-- 我们的客户结束 -->
+
+
+<!-- 通用底部开始 -->
+<div class="container-fluid" style="height: 220px; background-color: #5bc0de;">
+	<div class="container" style="padding-top: 26px;padding-left: 180px;">
+		<dl class="dl-horizontal">
+		  <dt>企业名称：</dt>
+		  <dd>河南省浩大建设工程有限公司</dd>
+		</dl>
+		<dl class="dl-horizontal">
+		  <dt>资质等级：</dt>
+		  <dd>防水防腐保温工程专业承包壹级，建筑装饰装修工程专业承包贰级</dd>
+		</dl>
+		<dl class="dl-horizontal">
+		  <dt>经营范围：</dt>
+		  <dd>防水、防腐、保温专业施工；装饰装修工程施工；消防工程施工；建筑工程施工；钢结构工程施工；</dd>
+		  <dd>劳务工程施工；防水材料、防腐材料、保温材料、内外墙涂料销售；</dd>
+		</dl>
+		<dl class="dl-horizontal">
+		  <dt>联系我们：</dt>
+		  <dd>18137202662  &nbsp; &nbsp;   0371-53660377</dd>
+		</dl>
+	</div>
+</div> 
+<!-- 通用底部结束 -->
+</body>
+</html>
